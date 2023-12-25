@@ -95,7 +95,7 @@ class reDS3231 {
     bool get_squarewave(ds3231_sqw_t *freq);
     bool set_squarewave(ds3231_sqw_t freq);
   private:
-    i2c_port_t _numI2C = 0; 
+    i2c_port_t _numI2C = I2C_NUM_0; 
     uint8_t _addrI2C = 0;
     bool _enabled = false;
 
